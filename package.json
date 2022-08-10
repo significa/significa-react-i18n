@@ -1,0 +1,29 @@
+{
+  "name": "@significa/i18n",
+  "version": "1.0.0",
+  "description": "Simple i18n library for react",
+  "author": "Significa <development@significa.co>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier": "prettier \"src/**/*.+(ts|tsx|js|jsx|json|yml|yaml|md|mdx)\" --write",
+    "validate:types": "tsc --noEmit",
+    "postinstall": "husky install"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@significa/eslint-config": "^2.0.1",
+    "@significa/prettier-config": "^2.0.0",
+    "@significa/tsconfig-config": "^2.0.0",
+    "eslint": "^8.21.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}

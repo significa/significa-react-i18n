@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@significa",
+    "@significa/eslint-config/react"
+  ]
+}
