@@ -1,3 +1,10 @@
 {
-  "extends": "./node_modules/@significa/tsconfig-config/index.json"
+  "extends": "./node_modules/@significa/tsconfig-config/index.json",
+  "compilerOptions": {
+    "outDir": "lib/esm",
+    "noEmit": false,
+    "declaration": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"]
 }
