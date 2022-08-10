@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { getMatches, getMessage, getParts, parseMatchesForKey, useMessages, } from './utils';
 export var Translation = function (_a) {
     var id = _a.id, _b = _a.values, values = _b === void 0 ? {} : _b;

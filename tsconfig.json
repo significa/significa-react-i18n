@@ -3,7 +3,8 @@
   "compilerOptions": {
     "outDir": "lib/esm",
     "noEmit": false,
-    "declaration": true
+    "declaration": true,
+    "declarationDir": "./lib/types"
   },
   "include": ["src"],
   "exclude": ["node_modules", "lib"]

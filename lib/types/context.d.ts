@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-export declare const I18nContext: import("react").Context<{
+import React, { ReactNode } from 'react';
+export declare const I18nContext: React.Context<{
     readonly messages: Record<string, string>;
 }>;
 export declare const I18nProvider: ({ messages, children, }: {

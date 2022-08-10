@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import React from 'react';
 declare type Props = {
     id: string;
     values?: Record<string, string | React.ReactNode>;
