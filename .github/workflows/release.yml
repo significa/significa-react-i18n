@@ -21,7 +21,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
 
       - run: npx semantic-release
         env:
