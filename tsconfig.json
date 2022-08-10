@@ -4,7 +4,8 @@
     "outDir": "lib/esm",
     "noEmit": false,
     "declaration": true,
-    "declarationDir": "./lib/types"
+    "declarationDir": "./lib/types",
+    "jsx": "react"
   },
   "include": ["src"],
   "exclude": ["node_modules", "lib"]
