@@ -44,7 +44,7 @@ export const parseMatchesForKey = <
 ): T => {
   for (const match of matches) {
     const matchName = match.replace(/\{\{|\}\}/gim, '')
-    if (!values[matchName]) {
+    if (values[matchName] === undefined) {
       if (process.env.NODE_ENV !== 'production') {
         throw new Error(
           `Missing value: \`${matchName}\` for translation key: \`${key}\``
