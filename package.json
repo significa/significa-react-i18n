@@ -1,7 +1,11 @@
 {
   "name": "@significa/react-i18n",
-  "version": "1.0.0",
   "description": "Simple i18n library for react",
+  "version": "0.0.1-development",
+  "repository": "github:significa/significa-react-i18n",
+  "publishConfig": {
+		"@significa:registry": "https://npm.pkg.github.com"
+	},
   "author": "Significa <development@significa.co>",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -10,7 +14,7 @@
     "/lib"
   ],
   "scripts": {
-    "build": "npx rimraf ./lib && yarn build:esm && yarn build:cjs",
+    "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "test": "echo \"Error: no test specified\" && exit 0",
@@ -28,11 +32,6 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@semantic-release/commit-analyzer": "^8.0.1",
-    "@semantic-release/git": "^9.0.0",
-    "@semantic-release/github": "^8.0.4",
-    "@semantic-release/npm": "^9.0.1",
-    "@semantic-release/release-notes-generator": "^10.0.3",
     "@significa/eslint-config": "^2.0.1",
     "@significa/prettier-config": "^2.0.0",
     "@significa/tsconfig-config": "^2.0.0",
