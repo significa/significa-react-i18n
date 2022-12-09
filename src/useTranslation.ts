@@ -26,7 +26,7 @@ export const useTranslation = () => {
 
     const matchedValues = parseMatchesForKey(matches, key, values)
     const elements = parts.map((part) => {
-      return matchedValues[part] || part
+      return matchedValues[part] ?? part
     })
 
     return Array.isArray(elements) ? elements.join('') : elements

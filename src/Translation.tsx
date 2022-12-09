@@ -28,7 +28,7 @@ export const Translation = ({ id, values = {} }: Props): JSX.Element => {
     Record<string, string | React.ReactNode>
   >(matches, id, values)
   const elements = parts.map((part, i) => {
-    return <Fragment key={part + i}>{matchedValues[part] || part}</Fragment>
+    return <Fragment key={part + i}>{matchedValues[part] ?? part}</Fragment>
   })
 
   return <Fragment>{elements}</Fragment>
