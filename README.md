@@ -20,6 +20,8 @@ A Zero dependency opinionated Significa's i18n package for React.
 
 Include the provider on the top level of your app.
 
+Pass the messages object based on the current language selected on your app.
+
 ```js
 import { I18nProvider } from '@significa/react-i18n'
 
@@ -66,9 +68,6 @@ Your messages object should be according to the following example.
   anotherId: anotherMessage
 }
 ```
-
-You have to deal the language switcher outside this package.
-If using Next.js you'll have that out of the box
 
 ## Message parameters
 
