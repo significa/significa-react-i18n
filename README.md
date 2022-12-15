@@ -38,7 +38,7 @@ const YourComponent = () => {
 
   return (
     <div>
-      <p>{t.yourMessage}</p>
+      <p>{t('yourMessage')}</p>
     </div>
   )
 }
