@@ -78,14 +78,20 @@ It's possible to add parameters to the message, a string between double curlybra
 ```js
 // Messages Object
 {
-  term: "You searched for {{term}}"
+  greet: "Hello {{name}}"
 }
 ```
 
 ```js
-<Translation id="blog.search" values={{
-  term: searchedTerm   // {{term}} will be replaced for searchedTerm
+<Translation id="greet" values={{
+  name: user.name   // {{name}} will be replaced by `user.name`
 }} />
+
+OR
+
+<p>
+  {t('greet', { name: user.name })}
+</p>
 ```
 
 ## License
